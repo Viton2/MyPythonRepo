@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link href="static/ajax.css" rel="stylesheet" type="text/css">
+  <title>Cadastro de Pessoas</title>
+</head>
+<body>
+  <h1>Formulário para cadastro de Pessoas</h1>
+  <hr/>
+  <form action="/getImgs" method="post" enctype="multipart/form-data">
+      <table>
+          <tr>
+              <td>Nome da Pessoa:</td>
+              <td><input type="text" name="pNome" size="50" maxlength="50" required/></td>
+          </tr>
+          <tr>
+              <td>Endereço:</td>
+              <td><input type="text" name="pEndereco" size="80" maxlength="120" required/></td>
+          </tr>
+          <tr>
+              <td>Telefone:</td>
+              <td><input type="text" name="pTelefone" size="20" maxlength="20" required/></td>
+          </tr>
+          <tr>
+              <td>Foto:</td>
+              <td><input type="file" name="pImagem" required/></td>
+          </tr>
+      </table>
+      <br/>
+      <input type="submit" value="Enviar Dados"/>
+  </form>
+  <hr/>
+  <br/>
+  <a href="/"> Voltar ao Menu </a>
+</body>
+</html>
