@@ -10,6 +10,9 @@ class PontoDAO:
         engine = create_engine("mysql+mysqldb://root:uniceub@localhost/bd_mapas?charset=utf8mb4")
 
         # Mapeamento Objeto Relacional com o SQLAlchemy
+
+
+
         DB = automap_base()
         DB.prepare(engine, reflect=True)
         self.tb_ponto = DB.classes.tb_ponto
