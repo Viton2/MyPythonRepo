@@ -13,6 +13,7 @@ class PontoSchema(SQLAlchemyAutoSchema):
 
 class PontoRest(Resource):
 
+
     def get(self):
         lista = dao.readAll()
         sch = PontoSchema(many=True)
